@@ -1,0 +1,250 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+
+.container{
+    width: 100%;
+    height: 50vh;
+    min-height: 100vh;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+p{
+    font-size: 14px;
+    font-family: sans-serif;
+    cursor: pointer;
+}
+
+.navbar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.buy{
+    cursor: pointer;
+}
+
+.logo{
+    width: 50px;
+    cursor: pointer;
+    margin: 30px 0;
+}
+
+
+nav{
+    flex: 1;
+    text-align: center;
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 150px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #000;
+    font-size: 14px;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 200px 0;
+}
+.row h2{
+    font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-decoration: none;
+    font-weight: 100;
+    color: #610259;
+}
+
+.row h4{
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: normal;
+    color: #4f0048;
+}
+
+.col-1{
+    position: relative;
+    margin-left: 0px;
+    width: 600px;
+    height: 500px;
+}
+
+.button1{
+    margin-right: 20px;
+    margin-top: 50px;
+    padding: 11px 10px;
+    width: 120px;
+    background-color: white;
+    border-color: #610259;
+    color: #610259;
+    cursor: pointer;
+    transition-duration: 0.5s;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+.button1:hover{
+    background-color: #610259;
+    color: white;
+}
+
+.button2{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    width: 120px;
+    padding: 11px 10px;
+    background-color: #610259;
+    border-color: #610259;
+    color: white;
+    cursor: pointer;
+    transition-duration: 0.5s;
+}
+
+.button2:hover{
+    background-color: white;
+    color: #610259;
+}
+
+.eclipse-big{
+   width: 1000px;
+   height: 600px;
+   position: fixed;
+   right: -150px;
+   top: 0px;
+   z-index: -1;
+   opacity: 0.5;
+}
+.eclipse-medium{
+    width: 400px;
+    height: 400px;
+    position: fixed;
+    right: 600px;
+    top: 250px;
+    opacity: 0.5;
+}
+.eclipse-small{
+    width: 300px;
+    height: 300px;
+    position: fixed;
+    right: 1000px;
+    top: 450px;
+}
+
+.col-2{
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 500px;
+    height: 300px;
+    bottom: 150px;
+    right: 50px;
+}
+
+.laptop{
+    width: 500px;
+    height: 500px;
+}
+
+.move{
+    position: relative;
+    display: flex;
+    align-items: center;
+    right: 350px;
+    bottom: -300px;
+}
+
+.left-arrow{
+    margin: 0 30px 0 0;
+    cursor: pointer;
+}
+
+.right-arrow{
+    margin: 0 30px 0 0;
+    cursor: pointer;
+}
+
+.dot{
+    margin: 0 30px 0 0;
+}
+
+.full-dot{
+    margin: 0 30px 0 0;
+}
+
+.menu-icon{
+    width: 25px;
+    cursor: pointer;
+    display: none;
+}
+
+@media only screen and (max-width: 700px){
+    nav ul{
+        width: 100%;
+        position: absolute;
+        top: 50px;
+        left: 180px;
+        z-index: 2;
+        color: #610259;
+    }
+
+    nav ul li{
+        display: block;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .menu-icon{
+        display: block;
+        margin-right: 20px;
+    }
+    #menuList{
+        overflow: hidden;
+        transition: 0.5s;
+    }
+
+    .row{
+        flex-direction: column;
+        margin: 50px 0;
+    }
+    .col-1{
+        flex-basis: 100%;
+        margin-bottom: 50px;
+        
+    }
+    .col-2{
+        flex-basis: 100%;
+        margin-top: 100px;
+    }
+    .col-1 h2{
+        font-size: 30px;
+        margin-left: 150px;
+    }
+    .col-1 h4{
+        font-size: 10px;
+        margin-left: 150px;
+        margin-top: 10px;
+    }
+    .button1{
+        margin-left: 170px;
+    }
+    .col-2 .laptop{
+        width: 75%;
+        margin-left: 110px;
+    }
+    .move{
+        margin-left: 50px;
+        
+    }
+}

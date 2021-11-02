@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"> 
+    <title>Three 'tops</title>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <img class="logo" src="images/logo.svg"><p>Three 'tops</p> 
+            <nav>
+                <ul id="menuList">
+                    <li><a href="">Specs</a></li>
+                    <li><a href="">Products</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </nav>
+            <img src="images/menu.png" class="menu-icon" onclick="togglemenu()">
+            <img class="buy" src="images/cart.svg">
+        </div>
+        
+        <div class="eclipse">
+            <img class="eclipse-big" src="images/big-eclipse.svg">
+            <img class="eclipse-medium" src="images/mid-eclipse.svg">
+            <img class="eclipse-small" src="images/small-eclipse.svg">
+        </div>
+
+        <div class="row">
+            <div class="col-1">
+                <h2>Laptop for the future</h2>
+                <h4>The new 14 inch bezeless aferring a 4k display with touch screen.</h4>
+                <button type="button" class="button1">14 inch</button>
+                <button type="button" class="button2">Add To Cart</button>
+            </div>
+            <div class="col-2">
+                <img src="images/matebook.png" class="laptop">
+                
+                <div class="move">
+                    <img src="images/arrow-left.svg" class="left-arrow" onclick="myFuncion()">
+                    <img src="images/dot.svg" class="dot">
+                    <img src="images/dot-full.svg" class="full-dot">
+                    <img src="images/dot-full.svg" class="full-dot">
+                    <img src="images/arrow-right.svg" class="right-arrow">
+                </div>    
+            </div>
+
+
+        </div>
+    </div>
+
+    <script>
+        var menuList = document.getElementById("menuList");
+
+        menuList.style.maxHeight = "0px";
+
+        function togglemenu(){
+            if(menuList.style.maxHeight == "0px"){
+                menuList.style.maxHeight = "130px"
+            }
+            
+            else{
+                menuList.style.maxHeight = "0px"
+            }
+        }
+    </script>
+</body>
+</html>
